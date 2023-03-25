@@ -5,7 +5,9 @@
 ## Kelas   : TI.21.C.1
 ## Matkul  : Pemrograman Web 2
 
-- Program index
+- Program 
+
+1. Index.php
 
 ```php
 
@@ -43,7 +45,7 @@
 </html>
 ```
 
-- Output
+2. output.php
 
 ```php
 <title> Output </title>
@@ -81,6 +83,9 @@
 ?>
 ```
 
+3. php dasar
+
+
 ```php
 <title> Output </title>
 <?php
@@ -117,6 +122,8 @@
 ?>
 ```
 
+4. variable_php.php
+
 ```php
 <title> Output </title>
 <?php
@@ -153,11 +160,16 @@
 ?>
 ```
 
+5. Predifine_variable.php
+Untuk bisa mengakses file ini kita link localhost nya harus kita tambah (?nama='objek'). contohnya :
+http://localhost/lab2_php_dasar/latihan/Predefine_varible.php?nama=Imam
 ```php
 <?php
 echo 'Selamat Datang ' . $_GET['nama'];
 ?>
 ```
+
+6. form_input.php
 
 ```php
 <!DOCTYPE html>
@@ -180,6 +192,8 @@ echo 'Selamat Datang ' . $_POST['nama'];
 </html>
 ```
 
+7. Operator.php
+
 ```php
 <?php
 $gaji = 1000000;
@@ -189,6 +203,9 @@ echo "Gaji sebelum pajak = Rp. $gaji <br>";
 echo "Gaji yang dibawa pulang = Rp. $thp";
 ?>
 ```
+
+
+8. kondisi_if.php
 
 ```php
 <?php
@@ -201,6 +218,8 @@ if ($nama_hari == "Sunday") {
     echo "Selasa"; }
 ?>
 ```
+
+9. kondisi_switch.php
 
 ```php
 <?php
@@ -221,6 +240,8 @@ switch ($nama_hari) {
 ?>
 ```
 
+10. for.php
+
 ```php
 <?php
 echo "Perulangan 1 sampai 10 <br />";
@@ -235,6 +256,8 @@ for ($i=10; $i>=1; $i--) {
 ?>
 ```
 
+11. while.php
+
 ```php
 <?php
 echo "Perulangan 1 sampai 10 <br />";
@@ -245,6 +268,9 @@ while ($i<=10) {
 }
 ?>
 ```
+
+12. dowhile.php
+
 
 ```php
 <?php
