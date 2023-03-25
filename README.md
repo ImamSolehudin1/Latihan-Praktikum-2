@@ -138,7 +138,7 @@ http://localhost/lab2_php_dasar/latihan/Predefine_varible.php?nama=Imam
 echo 'Selamat Datang ' . $_GET['nama'];
 ?>
 ```
-![gambar](ss/predifine_variable.png)
+![gambar](ss/predefine_variable.png)
 
 6. form_input.php
 
