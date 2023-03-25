@@ -44,6 +44,7 @@
 </body>
 </html>
 ```
+![gambar](ss/index.png)
 
 2. output.php
 
@@ -82,83 +83,22 @@
     }
 ?>
 ```
+![gambar](ss/output.png)
 
 3. php dasar
 
 
 ```php
-<title> Output </title>
-<?php
-    
-    $tanggal_lahir = new DateTime($_POST['tanggal_lahir']);
-    $sekarang = new DateTime("today");
-    if ($tanggal_lahir > $sekarang) { 
-    $thn = "0";
-    $bln = "0";
-    $tgl = "0";
-    }
-    $thn = $sekarang->diff($tanggal_lahir)->y;
-    $bln = $sekarang->diff($tanggal_lahir)->m;
-    $tgl = $sekarang->diff($tanggal_lahir)->d;
 
-    echo 'Nama      :  ' . $_POST['nama'];
-    echo "<br>";
-    echo "Tanggal Lahir : ". $_POST['tanggal_lahir'];
-    echo "<br>";
-    echo "Umur      : ";
-    echo $thn." tahun ". $bln. " bulan " . $tgl. " hari";
-    echo "<br>";
-    echo "Pekerjaan     : " . $_POST['pekerjaan'];
-    echo "<br>";
-
-
-    $pekerjaan = ($_POST['pekerjaan']);
-    switch ($pekerjaan){
-        case "Karyawan": echo "Gaji     : Rp 5.000.000";break;
-        case "PNS": echo "Gaji      : Rp 6.000.000";break;
-        case "Petani": echo "Gaji       : Rp 3.000.000";break;
-        case "Wiraswasta": echo "Gaji       : Rp 4.000.000";break;
-    }
-?>
 ```
+![gambar](ss/php_dasar.png)
 
 4. variable_php.php
 
 ```php
-<title> Output </title>
-<?php
-    
-    $tanggal_lahir = new DateTime($_POST['tanggal_lahir']);
-    $sekarang = new DateTime("today");
-    if ($tanggal_lahir > $sekarang) { 
-    $thn = "0";
-    $bln = "0";
-    $tgl = "0";
-    }
-    $thn = $sekarang->diff($tanggal_lahir)->y;
-    $bln = $sekarang->diff($tanggal_lahir)->m;
-    $tgl = $sekarang->diff($tanggal_lahir)->d;
 
-    echo 'Nama      :  ' . $_POST['nama'];
-    echo "<br>";
-    echo "Tanggal Lahir : ". $_POST['tanggal_lahir'];
-    echo "<br>";
-    echo "Umur      : ";
-    echo $thn." tahun ". $bln. " bulan " . $tgl. " hari";
-    echo "<br>";
-    echo "Pekerjaan     : " . $_POST['pekerjaan'];
-    echo "<br>";
-
-
-    $pekerjaan = ($_POST['pekerjaan']);
-    switch ($pekerjaan){
-        case "Karyawan": echo "Gaji     : Rp 5.000.000";break;
-        case "PNS": echo "Gaji      : Rp 6.000.000";break;
-        case "Petani": echo "Gaji       : Rp 3.000.000";break;
-        case "Wiraswasta": echo "Gaji       : Rp 4.000.000";break;
-    }
-?>
 ```
+![gambar](ss/variable_php.png)
 
 5. Predifine_variable.php
 Untuk bisa mengakses file ini kita link localhost nya harus kita tambah (?nama='objek'). contohnya :
@@ -168,6 +108,7 @@ http://localhost/lab2_php_dasar/latihan/Predefine_varible.php?nama=Imam
 echo 'Selamat Datang ' . $_GET['nama'];
 ?>
 ```
+![gambar](ss/predifine_variable.png)
 
 6. form_input.php
 
@@ -191,6 +132,7 @@ echo 'Selamat Datang ' . $_POST['nama'];
 </body>
 </html>
 ```
+![gambar](ss/form_input.png)
 
 7. Operator.php
 
@@ -203,7 +145,7 @@ echo "Gaji sebelum pajak = Rp. $gaji <br>";
 echo "Gaji yang dibawa pulang = Rp. $thp";
 ?>
 ```
-
+![gambar](ss/Operator.png)
 
 8. kondisi_if.php
 
@@ -218,6 +160,7 @@ if ($nama_hari == "Sunday") {
     echo "Selasa"; }
 ?>
 ```
+![gambar](ss/kondisi_if.png)
 
 9. kondisi_switch.php
 
@@ -239,6 +182,7 @@ switch ($nama_hari) {
      }
 ?>
 ```
+![gambar](ss/kondisi_switch.png)
 
 10. for.php
 
@@ -255,6 +199,7 @@ for ($i=10; $i>=1; $i--) {
 }
 ?>
 ```
+![gambar](ss/for.png)
 
 11. while.php
 
@@ -268,6 +213,7 @@ while ($i<=10) {
 }
 ?>
 ```
+![gambar](ss/while.png)
 
 12. dowhile.php
 
@@ -282,3 +228,4 @@ $i++;
 } while ($i<=15);
 ?>
 ```
+![gambar](ss/dowhile.png)
